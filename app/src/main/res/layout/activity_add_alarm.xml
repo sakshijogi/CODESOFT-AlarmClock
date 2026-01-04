@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alarm1">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="@color/white"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="24dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter alarm label"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioOnce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Once" />
+
+        <RadioButton
+            android:id="@+id/radioDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:layout_marginStart="24dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Save Alarm"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
